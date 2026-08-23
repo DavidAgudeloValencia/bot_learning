@@ -1,0 +1,16 @@
+{
+    "functions": {
+        "api/webhook.py": {
+            "maxDuration": 30
+        },
+        "api/cron-recordatorios.py": {
+            "maxDuration": 30
+        }
+    },
+    "crons": [
+        {
+            "path": "/api/cron-recordatorios",
+            "schedule": "0 13 * * *"
+        }
+    ]
+}
